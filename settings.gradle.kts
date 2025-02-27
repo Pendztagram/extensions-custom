@@ -11,6 +11,8 @@ File(rootDir, ".").eachDir { dir ->
     }
 }
 
+includeBuild("NgeFilmProvider")
+
 fun File.eachDir(block: (File) -> Unit) {
     listFiles()?.filter { it.isDirectory }?.forEach { block(it) }
 }
